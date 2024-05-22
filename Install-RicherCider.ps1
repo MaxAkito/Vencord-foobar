@@ -13,7 +13,7 @@ npm install -g pnpm@9.1.0
 git clone https://github.com/Vendicated/Vencord.git
 
 # Download a file into the cloned repository directory
-$downloadUrl = "https://raw.githubusercontent.com/ciderapp/RicherCider-Vencord/main/richerCider.desktop.tsx"
+$downloadUrl = "https://raw.githubusercontent.com/tunip3/Vencord-foobar/main/richerCider.desktop.tsx"
 $downloadPath = "Vencord/src/plugins/richerCider.desktop.tsx"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
 
