@@ -5,7 +5,7 @@ Created by cryptofyre
 
 ## Installation Guide (Automated, Windows Only)
 ### Run in Powershell (Non Admin)
-`Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/tunip3/Vencord-foobar/main/Install-RicherCider.ps1' -UseBasicParsing).Content`
+`Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/MaxAkito/Vencord-foobar/main/Install-RicherCider.ps1' -UseBasicParsing).Content`
 
 ## Installation Guide (Manual)
 
@@ -16,7 +16,7 @@ Created by cryptofyre
 
 ### Run the following in Powershell
 ```
-git clone https://github.com/Vendicated/Vencord; curl https://raw.githubusercontent.com/tunip3/Vencord-foobar/main/richerCider.desktop.tsx -o Vencord/src/plugins/richerCider.desktop.tsx; cd Vencord/; pnpm install; pnpm build; pnpm inject;
+git clone https://github.com/Vendicated/Vencord; curl https://raw.githubusercontent.com/MaxAkito/Vencord-foobar/main/richerCider.desktop.tsx -o Vencord/src/plugins/richerCider.desktop.tsx; cd Vencord/; pnpm install; pnpm build; pnpm inject;
 ```
 
 #### Do not use public forks including this file as we cannot assure the legitmacy of the repo and its contents.
