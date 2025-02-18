@@ -21,11 +21,6 @@ import { Logger } from "@utils/Logger";
 import definePlugin from "@utils/types";
 import { Forms } from "@webpack/common";
 const appIds = [
-    "911790844204437504",
-    "886578863147192350",
-    "1020414178047041627",
-    "1032800329332445255",
-    "507982587416018945",
     "1270635474066870282"
 ];
 const logger = new Logger("richerCider");
