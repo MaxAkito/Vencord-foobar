@@ -43,8 +43,8 @@ export default definePlugin({
         {
             find: '="LocalActivityStore",',
             replacement: {
-                match: /LOCAL_ACTIVITY_UPDATE:function\((\i)\)\{/,
-                replace: "$&$self.patchActivity($1.activity);",
+                match: /\i\(\i\)\{.{0,25}activity:(\i)\}=\i;/,
+                replace: "$&$self.patchActivity($1);",
             }
         },
         {
@@ -74,6 +74,7 @@ export default definePlugin({
         </>
     ),
     patchActivity(activity: { application_id: string; type: number; }) {
+        logger.debug("Plugin started");
         if (appIds.includes(activity?.application_id)) {
             logger.debug("Found a matching application ID, correcting activity type");
             activity.type = 2; /* LISTENING type */
